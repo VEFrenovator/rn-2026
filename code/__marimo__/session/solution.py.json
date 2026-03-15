@@ -1,0 +1,340 @@
+{
+  "version": "1",
+  "metadata": {
+    "marimo_version": "0.20.2"
+  },
+  "cells": [
+    {
+      "id": "setup",
+      "code_hash": "8406720b16f2221693c680512204b265",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Hbol",
+      "code_hash": "64aa85476e837c7cd25d2b11fad755db",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h1 id=\"2-89\">\u041e\u043b\u0438\u043c\u043f\u0438\u0430\u0434\u0430 \u00ab\u0420\u043e\u0441\u0441\u0435\u0442\u0438\u00bb, 2 \u044d\u0442\u0430\u043f, 8\u20149 \u043a\u043b\u0430\u0441\u0441</h1></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "MJUe",
+      "code_hash": "ac0fa43d5799cf72a2aa44d479d7cb2c",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"_1\">\u0418\u043c\u043f\u043e\u0440\u0442 \u0431\u0438\u0431\u043b\u0438\u043e\u0442\u0435\u043a. \u041f\u043e\u0434\u0433\u043e\u0442\u043e\u0432\u043a\u0430</h2></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "vblA",
+      "code_hash": "1d0db38904205bec4d6f6f6a1f6cec3e",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "bkHC",
+      "code_hash": "9c411a057d81d6288afa1366eaff87c2",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "lEQa",
+      "code_hash": "e16814994ee511de146b621b63dcfa31",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "PKri",
+      "code_hash": "ad70956ff291dd50747aca83ac4aa17b",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Xref",
+      "code_hash": "35c578f6f559dacc0a677806add91fe0",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "SFPL",
+      "code_hash": "ae8e8f5ba40ffbe043b797b2c49b11c3",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"_1\">\u041e\u0431\u044a\u044f\u0432\u043b\u0435\u043d\u0438\u0435 \u043a\u043e\u043d\u0441\u0442\u0430\u043d\u0442 \u0438\u0437 \u0443\u0441\u043b\u043e\u0432\u0438\u0439</h2></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "BYtC",
+      "code_hash": "0cc8f26a27842d5a28f8b382cecdd5d3",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "RGSE",
+      "code_hash": "808cf5513659e8c6d10d30898eb26302",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><table>\n<thead>\n<tr>\n<th style=\"text-align: center;\">\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435 \u043f\u0435\u0440\u0435\u043c\u0435\u043d\u043d\u043e\u0439</th>\n<th style=\"text-align: center;\">\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435 \u0432 \u0443\u0441\u043b\u043e\u0432\u0438\u0438 \u043a\u0435\u0439\u0441\u0430</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: center;\"><code>OUTAGES_FREQ_PER_KM</code></td>\n<td style=\"text-align: center;\"><marimo-tex class=\"arithmatex\">||(\\lambda = 0.05 \\ \\text{\u0440\u0430\u0437/\u043a\u043c}||)</marimo-tex></td>\n</tr>\n<tr>\n<td style=\"text-align: center;\"><code>LOSS_PER_POWER</code></td>\n<td style=\"text-align: center;\"><marimo-tex class=\"arithmatex\">||(\u0443_{\\lambda} = 200 \\ \\text{\u0440\u0443\u0431./\u043a\u0412\u0442}||)</marimo-tex></td>\n</tr>\n<tr>\n<td style=\"text-align: center;\"><code>LOSS_PER_WORK</code></td>\n<td style=\"text-align: center;\"><marimo-tex class=\"arithmatex\">||(\u0443_D = 50 \\ \\text{\u0440\u0443\u0431./\u043a\u0412\u0442} \\cdot \\text{\u0447}||)</marimo-tex></td>\n</tr>\n<tr>\n<td style=\"text-align: center;\"><code>PRICE_PER_KM</code></td>\n<td style=\"text-align: center;\">\u0426\u0435\u043d\u0430 \u0437\u0430 \u043a\u0438\u043b\u043e\u043c\u0435\u0442\u0440 \u043b\u0438\u043d\u0438\u0438</td>\n</tr>\n</tbody>\n</table></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Kclp",
+      "code_hash": "8e57e6ed06a33531b8d0cf56176878bd",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "emfo",
+      "code_hash": "73837636741ebb515ce6ae2c51fb0d9d",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "29 29\n[((0.5, 4.5), 300), ((1, 6), 20), ((2, 9.5), 300), ((3, 14), 150), ((3, 2), 20), ((3, 6.5), 40), ((3, 13), 300), ((3.5, 11.5), 150), ((4, 4.5), 500), ((4, 0.5), 200), ((4, 8), 20), ((4.5, 14.5), 40), ((5.5, 11), 500), ((6, 6), 20), ((6.5, 10.5), 60), ((7.5, 13), 40), ((8, 6.5), 40), ((8, 15), 60), ((9, 11.5), 200), ((10, 1.5), 150), ((10.5, 6), 60), ((11.5, 3), 200), ((11.5, 7), 60), ((12.5, 0), 300), ((13, 11), 500), ((13, 3), 500), ((13.5, 9.5), 200), ((14, 6), 150), ((15, 13), 40)]\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "Hstk",
+      "code_hash": "511c22ed804f8111cf18a3aeccf7d3fd",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"_1\">\u041f\u0440\u0435\u0434\u0441\u0442\u0430\u0432\u043b\u0435\u043d\u0438\u0435 \u044d\u043b\u0435\u043c\u0435\u043d\u0442\u043e\u0432 \u0441\u0435\u0442\u0438 \u043a\u0430\u043a \u043a\u043b\u0430\u0441\u0441\u043e\u0432</h2></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "nWHF",
+      "code_hash": "5c56569c43ef92b88488ddd3b183b927",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"node\"><code>Node</code> \u2014 \u043f\u043e\u0442\u0440\u0435\u0431\u0438\u0442\u0435\u043b\u0438 (\u0432\u0435\u0440\u0448\u0438\u043d\u044b \u0433\u0440\u0430\u0444\u0430)</h3></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "iLit",
+      "code_hash": "e61b0790c3f9e1f5df0d746d6a2b41ba",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "ZHCJ",
+      "code_hash": "c3522e3aaec99d273a8f9acd46420423",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"equipment\"><code>Equipment</code> \u2014 \u043e\u0431\u043e\u0440\u0443\u0434\u043e\u0432\u0430\u043d\u0438\u0435 \u043d\u0430 \u0441\u043e\u0435\u0434\u0438\u043d\u0435\u043d\u0438\u044f\u0445</h3></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "ROlb",
+      "code_hash": "0bbd1c66b91f7540d85196d877666011",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "qnkX",
+      "code_hash": "8059c296e78db2deea7d4fe6ce0e53ca",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"connection\"><code>Connection</code> \u2014 \u043b\u0438\u043d\u0438\u044f \u044d\u043b\u0435\u043a\u0442\u0440\u043e\u043f\u0435\u0440\u0435\u0434\u0430\u0447 (\u0440\u0435\u0431\u0440\u043e)</h3></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "TqIu",
+      "code_hash": "7692f0940caaba5a5862e498b22946ff",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Vxnm",
+      "code_hash": "4cd9647c169f708a3403d04534e74853",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"network\"><code>Network</code> \u2014 \u0441\u0435\u0442\u044c</h3></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "DnEU",
+      "code_hash": "8a08c4146e1aebcca2f7d4b877ad4498",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "ulZA",
+      "code_hash": "9acab819a9e171f38fe773740169b1bb",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "ecfG",
+      "code_hash": "3791e5cc3a857d070fb6d04b320423b0",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Pvdt",
+      "code_hash": "7ff8a5cab7d62a20f67a76e45f279c47",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    }
+  ]
+}

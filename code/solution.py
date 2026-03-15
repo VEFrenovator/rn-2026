@@ -1,7 +1,20 @@
 import marimo
 
-__generated_with = "0.20.4"
+__generated_with = "0.20.2"
 app = marimo.App()
+
+with app.setup:
+    from typing import Tuple, List, Self
+    import numpy as np
+    from scipy.spatial.distance import euclidean as euclidean_distance
+    from fastcore.basics import store_attr
+    from fastcore.meta import delegates
+    from matplotlib import pyplot as plt
+    from matplotlib.ticker import MultipleLocator
+    import plotly
+    from plotly import graph_objects as go
+    from plotly import express as px
+    from dash import Dash, Output, dcc, html, callback, Input
 
 
 @app.cell
@@ -29,104 +42,86 @@ def _():
 
 @app.cell
 def _():
-    from typing import Tuple, List, Self
-    import numpy as np
-    from scipy.spatial.distance import euclidean as euclidean_distance
-    from fastcore.basics import store_attr
-    from fastcore.meta import delegates
-    from matplotlib import pyplot as plt
-    from matplotlib.ticker import MultipleLocator
-    import plotly
-    from plotly import graph_objects as go
-    from plotly import express as px
-    from dash import Dash, Output, dcc, html, callback, Input
-
-    return (
-        Dash,
-        Input,
-        List,
-        MultipleLocator,
-        Output,
-        Self,
-        Tuple,
-        callback,
-        dcc,
-        delegates,
-        euclidean_distance,
-        go,
-        html,
-        plt,
-        px,
-        store_attr,
-    )
+    # from typing import Tuple, List, Self
+    # import numpy as np
+    # from scipy.spatial.distance import euclidean as euclidean_distance
+    # from fastcore.basics import store_attr
+    # from fastcore.meta import delegates
+    # from matplotlib import pyplot as plt
+    # from matplotlib.ticker import MultipleLocator
+    # import plotly
+    # from plotly import graph_objects as go
+    # from plotly import express as px
+    # from dash import Dash, Output, dcc, html, callback, Input
+    return
 
 
 @app.cell
 def _():
-    font_dict=dict(family='Arial',
-                   size=26,
-                   color='black'
-                   )
-    return (font_dict,)
+    # font_dict=dict(family='Arial',
+    #                size=26,
+    #                color='black'
+    #                )
+    return
 
 
 @app.cell
-def _(font_dict, go):
-    fig = go.Figure()
+def _():
+    # fig = go.Figure()
 
-    fig.update_xaxes(
-        range=(0, 15),
-        showgrid=True,
-        gridwidth=1,
-        minor=dict(
-            ticklen=2,
-            showgrid=True,
-            gridcolor="Gray",
-            gridwidth=0.25,
-        )
-    )
+    # fig.update_xaxes(
+    #     range=(0, 15),
+    #     showgrid=True,
+    #     gridwidth=1,
+    #     minor=dict(
+    #         ticklen=2,
+    #         showgrid=True,
+    #         gridcolor="Gray",
+    #         gridwidth=0.25,
+    #     )
+    # )
 
-    fig.update_xaxes(
-        title_text='X-axis',
-        showline=True,
-        showticklabels=True,
-        linecolor='black',
-        linewidth=2.4,
-        ticks='outside',
-        tickfont=font_dict,
-        mirror='allticks',
-        tickwidth=2.4,
-        tickcolor='black',
-    )
+    # fig.update_xaxes(
+    #     title_text='X-axis',
+    #     showline=True,
+    #     showticklabels=True,
+    #     linecolor='black',
+    #     linewidth=2.4,
+    #     ticks='outside',
+    #     tickfont=font_dict,
+    #     mirror='allticks',
+    #     tickwidth=2.4,
+    #     tickcolor='black',
+    # )
 
-    fig.update_yaxes(
-        range=(0, 15),
-        showgrid=True,
-        gridwidth=1,
-        minor=dict(
-            ticklen=2,
-            showgrid=True,
-            gridcolor="Gray",
-            gridwidth=0.5
-        )
-    )
+    # fig.update_yaxes(
+    #     range=(0, 15),
+    #     showgrid=True,
+    #     gridwidth=1,
+    #     minor=dict(
+    #         ticklen=2,
+    #         showgrid=True,
+    #         gridcolor="Gray",
+    #         gridwidth=0.5
+    #     )
+    # )
 
-    fig.update_yaxes(title_text='Y-axis',  # axis label
-                     showline=True,  # add line at x=0
-                     linecolor='black',  # line color
-                     linewidth=2.4, # line size
-                     ticks='outside',  # ticks outside axis
-                     tickfont=font_dict, # tick label font
-                     mirror='allticks',  # add ticks to top/right axes
-                     tickwidth=2.4,  # tick width
-                     tickcolor='black',  # tick color
-                     )
+    # fig.update_yaxes(title_text='Y-axis',  # axis label
+    #                  showline=True,  # add line at x=0
+    #                  linecolor='black',  # line color
+    #                  linewidth=2.4, # line size
+    #                  ticks='outside',  # ticks outside axis
+    #                  tickfont=font_dict, # tick label font
+    #                  mirror='allticks',  # add ticks to top/right axes
+    #                  tickwidth=2.4,  # tick width
+    #                  tickcolor='black',  # tick color
+    #                  )
 
-    fig.update_layout(plot_bgcolor='black',
-                      autosize=False,
-                      width=750,
-                      height=750)
-    fig.show()
+    # fig.update_layout(plot_bgcolor='black',
+    #                   autosize=False,
+    #                   width=750,
+    #                   height=750)
+    # fig.show()
     return
 
 
@@ -248,7 +243,7 @@ def _(mo):
 
 
 @app.cell
-def _(List, Tuple, delegates, store_attr):
+def _():
     class Node:
         def __init__(self, coords: Tuple[int, int], connections: List["Connection"] = []) -> None:
             self.connections = connections
@@ -341,14 +336,7 @@ def _(mo):
 
 
 @app.cell
-def _(
-    Equipment,
-    Node,
-    PRICE_PER_KM,
-    delegates,
-    euclidean_distance,
-    store_attr,
-):
+def _(Equipment, Node, PRICE_PER_KM):
     class NoConnectionError(Exception):
         @delegates(Exception.__init__)
         def __init__(self, **kwargs) -> None:
@@ -393,25 +381,7 @@ def _(mo):
 
 
 @app.cell
-def _(
-    COORDS,
-    ConsumerNode,
-    Dash,
-    Input,
-    List,
-    MultipleLocator,
-    Node,
-    Output,
-    POWERS,
-    Self,
-    SubstationNode,
-    callback,
-    dcc,
-    f,
-    html,
-    plt,
-    store_attr,
-):
+def _(COORDS, ConsumerNode, Node, POWERS, SubstationNode):
     class Network:
         def __init__(self, nodes: List[Node], substation_node: SubstationNode) -> None:
             store_attr()
@@ -456,8 +426,8 @@ def _(
             ax.scatter(x, y, s=100, c="r")
 
             plt.show()
-    
-        def start_interactive(self) -> None:
+
+        def interactive(self) -> Dash:
             self.app = Dash()
 
             self.app.layout = [
@@ -473,15 +443,15 @@ def _(
             )
             def connect(n_clicks: int) -> None:
                 return f"Сделано 'ЖМИ!' {n_clicks} раз"
-        
-            f
+
+            return self.app
 
     return (Network,)
 
 
 @app.cell
 def _(Network):
-    Network.init_from_default().visualize()
+    myapp = Network.init_from_default().interactive()
     return
 
 
@@ -504,7 +474,7 @@ def _():
     #         )
     #         def connect(n_clicks: int) -> None:
     #             return f"Сделано 'ЖМИ!' {n_clicks} раз"
-        
+
     #         subpro
     return
 
@@ -535,23 +505,6 @@ def _():
     # import subprocess
     # # subprocess.run(["conda activate env_ml"])
     # out = subprocess.run(["python", r"C:\Users\vladi\OneDrive\Projects\Code\Python\Olympic_games\RN\2026\code\dash_app_starter.py"])
-    return
-
-
-@app.cell
-def _(mo, px):
-    import pandas as pd
-
-
-    plot = px.scatter(pd.DataFrame({"x": [1, 2, 3], "y": [3, 1, 2]}))
-    out = mo.ui.plotly(plot)
-    out
-    return (out,)
-
-
-@app.cell
-def _(out):
-    out.value
     return
 
 
