@@ -1,0 +1,13 @@
+{
+    "folders": [
+        {
+            "path": "."
+        }
+    ],
+    "settings": {
+        "git.enabled": true,
+        "git.scanRepositories": [
+            "C:/Users/vladi/OneDrive/Projects/Code/Python/Olympic_games/RN/2026"
+        ]
+    }
+}

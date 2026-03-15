@@ -1,0 +1,2 @@
+Решение описано с LaTeX-файле, хранящимся и редактируемым на Overleaf:
+https://www.overleaf.com/project/69a141fffe102f56dce31efb
