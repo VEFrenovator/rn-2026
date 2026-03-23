@@ -4,3 +4,4 @@ fastcore
 matplotlib
 plotly
 dash
+pandas
