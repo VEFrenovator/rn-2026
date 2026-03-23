@@ -727,3 +727,4 @@ def interactive(self) -> Dash:
 
 
 network = Network.init_from_default().interactive()
+server = network.server
