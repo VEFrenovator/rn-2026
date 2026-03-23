@@ -1,0 +1,8 @@
+gunicorn
+pickle
+scipy
+fastcore
+matplotlib
+plotly
+dash
+uuid
