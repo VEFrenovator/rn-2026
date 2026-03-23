@@ -726,5 +726,6 @@ def interactive(self) -> Dash:
     # self.app.run(debug=True, jupyter_mode="external")
 
 
-network = Network.init_from_default().interactive()
+network = Network.init_from_default()
+network.interactive()
 server = network.server
